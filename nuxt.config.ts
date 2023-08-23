@@ -24,7 +24,7 @@ export default defineNuxtConfig({
     head: {
       title: 'Nexcent',
       htmlAttrs: {
-        lang: 'en',
+        lang: 'en'
       },
       meta: [
         { charset: 'utf-8' },
@@ -35,6 +35,7 @@ export default defineNuxtConfig({
             content: 'my website description'
         }
     ],
-    }
+    },
   }
+
 })
