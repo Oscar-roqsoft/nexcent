@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lexend+Deca&family=Pacifico&family=Shrikhand&family=Tilt+Neon&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
