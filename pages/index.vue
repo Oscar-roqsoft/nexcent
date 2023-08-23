@@ -33,7 +33,7 @@
 
             <div  class="flex flex-col md:flex-row md:px-8">
                 <div class="md:w-[45%]">
-                    <img src="/frame.png" alt="">
+                    <img src="/frame.png">
                 </div>
                 <div class="md:w-[50%] md:mt-10  md:pr-5">
                     <h1 class="text-3xl font-bold md:text-5xl capitalize  md:mt-0">The unseen of spending three years at Pixelgrade</h1>
