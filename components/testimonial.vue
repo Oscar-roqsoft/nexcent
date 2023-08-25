@@ -12,7 +12,8 @@
                 <div class="lg:absolute w-[310px]">
                     <img :src="item.img" class="w-full"/>
                 </div>
-                <div  ref="targetEL" class="target animate__animated  animate__fadeInUp transition ease-in-out delay-150 relative bottom-16 left-8 text-center px-2 py-4 shadow-xl rounded-lg w-[250px]  lg:top-44 bg-slate-200">
+                <div  v-animate-on-scroll
+                 class=" relative bottom-16 left-8 text-center px-2 py-4 shadow-xl rounded-lg w-[250px]  lg:top-44 bg-slate-200">
                     <p class="text-xs mb-2">{{ item.description }}</p>
                     <button type="button" class=" col-span-2 text-[#4caf4f] bg-transparent hover:text-white hover:bg-[#4caf4f]
                     focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded text-xs px-2 py-2 text-center inline-flex items-center">
@@ -30,21 +31,7 @@
 
 <script setup>
 
-import { useMotion } from '@vueuse/motion'
 
-const targetEL = ref()
-
-useMotion(targetEL,{
-    initial:{
-        opacity: 0,
-        y: 100,
-    },
-    visibleOnce: {
-        opacity:1,
-        y:0
-    },
-
-})
  
 const testimonial = [
     {
@@ -64,3 +51,18 @@ const testimonial = [
     }
 ]
 </script>
+
+
+
+<style scoped>
+
+.before-enter{
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 2s ease-in-out ;
+}
+.enter{
+    opacity: 1;
+    transform: translateY(0);
+}
+</style>

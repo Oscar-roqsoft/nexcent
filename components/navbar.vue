@@ -5,7 +5,7 @@
             <div class="flex  flex-wrap bg-[#f5f7fa]   z-50 justify-between w-full md:w-[20%] h-full p-4 border-b-2 md:border-none animate__animated 
             animate__fadeInDown transition-all">
                 <a  class="flex items-center">
-                    <img src="/Icon.png" class="h-8 mr-3" alt="Flowbite Logo">
+                    <img src="/Icon.png" class="h-8 mr-3" alt="Nexcent Logo">
                     <span class="self-center text-2xl font-semibold ">Nexcent</span>
                 </a>
 
@@ -33,7 +33,7 @@
                     <li @click="currentheight=nav" >
                         <a :href="`#${nav}`" 
                           class="block py-1 pl-1 pr-4 md:mx-0  rounded md:bg-transparent  md:p-0" aria-current="page"
-                          :class="currentheight===nav?'bg-[#4caf4f] md:text-[#4caf4f] transition-all':''">
+                          :class="currentheight===nav?'bg-[#4caf4f] text-white md:text-[#4caf4f] transition-all':''">
                           {{ nav}}
                         </a>
                     </li>

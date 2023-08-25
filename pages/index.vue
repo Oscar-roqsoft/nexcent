@@ -21,8 +21,9 @@
             
             <div  class="grid grid-cols-1 md:grid-cols-3 mx-w-auto gap-5 my-8 ">
                 <div  v-for="card in cards" :key="card">
-                       <div class="flex flex-col items-center rounded-lg justify-center text-center h-[200px] w-[250px] shadow-lg shadow-slate-500 
-                       py-4 px-5  animate__animated  animate__fadeInUp transition ease-in-out delay-150">
+                       <div v-animate-on-scroll
+                       class="flex flex-col items-center rounded-lg justify-center text-center h-[200px] w-[250px] shadow-lg shadow-slate-500 
+                       py-4 px-5">
                            <icon  :name="card.iconName" size="30"/>
                            <h2 class="text-xl font-bold capitalize my-1">{{ card.title }}</h2>
                            <p class="text-sm text-gray-500">{{ card.article }}</p>
@@ -178,3 +179,17 @@ const cards =[
     
 ]
 </script>
+
+
+<style scoped>
+
+.before-enter{
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 2s ease-in-out ;
+}
+.enter{
+    opacity: 1;
+    transform: translateY(0);
+}
+</style>
