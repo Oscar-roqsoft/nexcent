@@ -9,7 +9,7 @@ export default defineNuxtConfig({
     '@vueuse/motion/nuxt'
   ],
   plugins: [
-    '~/plugins/animateOnScroll.client.js'
+    {src:'~/plugins/animateOnScroll.js'}
   ],
   experimental: {
     payloadExtraction: false

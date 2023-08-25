@@ -48,10 +48,10 @@ export default defineNuxtPlugin((nuxtApp) => {
                el.classList.add('before-enter')
                 animateOnScrollObserver.observe(el)
                },
-      getSSRProps (binding, vnode) {
-        // you can provide SSR-specific props here
-        return {}
-      }
+      // getSSRProps (binding, vnode) {
+      //   // you can provide SSR-specific props here
+      //   return {}
+      // }
     })
   })
   
